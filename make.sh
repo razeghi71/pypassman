@@ -3,12 +3,14 @@ pyinstaller  --distpath=output/mainb/dist  --workpath=output/mainb/build ui/main
 pyinstaller  --distpath=output/getpassb/dist  --workpath=output/getpassb/build passget/getpass.py
 pyinstaller  --distpath=output/checkpassb/dist  --workpath=output/checkpassb/build passcheck/checkpass.py
 pyinstaller  --distpath=output/viewerb/dist  --workpath=output/viewerb/build viewer/viewer.py
+pyinstaller  --distpath=output/ssudob/dist  --workpath=output/ssudob/build sample_client/ssudo.py
 
 
 cp -rf output/mainb/dist/main/* output/
 cp -rf output/getpassb/dist/getpass/* output/
 cp -rf output/checkpassb/dist/checkpass/* output/
 cp -rf output/viewerb/dist/viewer/* output/
+cp -rf output/ssudob/dist/ssudo/* output/
 
 
 cp passcheck/*.conf output/
