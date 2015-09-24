@@ -90,7 +90,6 @@ args = parser.parse_args()
 
 if args.initdb:
     db.create_tables([App, SavedInfo])
-    print("tables created ...")
     sys.exit(0)
 success, master_password = init_loop()
 
